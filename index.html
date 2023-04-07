@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"> </script>
+    <title>Heat Map</title>
+</head>
+<body>
+  <h2 id='title'>United States Educational Attainment</h2>
+  <p id="description">Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)</p>
+  
+  <div id="tooltip"></div>
+  
+    <svg id="canvas">
+    </svg>
+  
+  <svg id="legend">
+    <g>
+      <rect x="10" y="0" width="40" height="40" fill="#191970"></rect>
+      <text x="60" y="20" fill="#d2dae2">Less than 15%</text>
+    </g>
+    <g>
+      <rect x="10" y="40" width="80" height="40" fill="#6F8FAF"></rect>
+      <text x="100" y="60" fill="#d2dae2">15% to 30%</text>
+    </g>
+     <g>
+      <rect x="10" y="80" width="120" height="40" fill="#0096FF"></rect>
+      <text x="140" y="100" fill="#d2dae2">30% to 45%</text>
+    </g>
+    <g>
+      <rect x="10" y="120" width="160" height="40" fill="#ADD8E6"></rect>
+      <text x="180" y="140" fill="#d2dae2">More than 45%</text>
+    </g>
+  </svg>
+</body>
+</html>
+
+
